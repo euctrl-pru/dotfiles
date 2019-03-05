@@ -1,0 +1,7 @@
+alias gst="git status"
+alias cls=clear
+alias m=less
+alias more=less
+export LESS="-XF --RAW-CONTROL-CHARS"
+alias ll='ls -l'
+alias lh='ls -lh'
