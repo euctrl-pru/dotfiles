@@ -3,5 +3,59 @@ alias cls=clear
 alias m=less
 alias more=less
 export LESS="-XF --RAW-CONTROL-CHARS"
+alias fn='find . -name'
+
+# safe aliases
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+
+# List all files colorized in long format
+alias ls='ls --color=auto'
+
 alias ll='ls -l'
 alias lh='ls -lh'
+
+alias h="history"
+alias j="jobs"
+
+
+
+# Easier navigation: .., ..., ...., ....., ~ and -
+# inspired by https://github.com/mathiasbynens/dotfiles
+alias ..="cd .."
+alias ..1="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+
+# git aliases from http://tjholowaychuk.com/page/3
+alias gd="git diff | subl"
+alias ga="git add"
+alias gbd="git branch -D"
+alias gst="git status"
+alias gls="git ls"
+alias gca="git commit -a -m"
+alias gm="git merge --no-ff"
+alias gpt="git push --tags"
+alias gp="git push"
+alias grh="git reset --hard"
+alias gb="git branch"
+alias gcob="git checkout -b"
+alias gco="git checkout"
+alias gba="git branch -a"
+alias gcp="git cherry-pick"
+alias gl="git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph"
+alias gpom="git pull origin master"
+alias gcd='cd "`git rev-parse --show-toplevel`"'
+
+# Git status
+alias gg="git status -sb"
+
+alias gcm="git commit -m"
+
+
